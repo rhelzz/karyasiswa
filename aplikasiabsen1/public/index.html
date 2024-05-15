@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="css/login.css">
+    <title>Login</title>
+</head>
+
+<body>
+
+    <div class="container" id="container">
+        <div class="form-container sign-up">
+            <form action="controller/request.php" method="post">
+                <h1>Request Account</h1>
+                <input type="text" placeholder="Masukan nama lengkap dan kelas" id="request" name="request">
+                <button type="submit">Request</button>
+            </form>
+        </div>
+        <div class="form-container sign-in">
+            <form action="controller/login.php" method="post">
+                <h1>Sign In</h1>
+                <input type="email" placeholder="Email" id="email" name="email">
+                <input type="password" placeholder="Password" id="password" name="password">
+                <a href="#">Forget Your Password?</a>
+                <button type="submit">Sign In</button>
+            </form>
+        </div>
+        <div class="toggle-container">
+            <div class="toggle">
+                <div class="toggle-panel toggle-left">
+                    <h1>Kamu sudah memiliki nya??</h1>
+                    <p>Ayo kita kembali, lalu login dengan akun yang kau punya!</p>
+                    <button class="hidden" id="login">Sign In</button>
+                </div>
+                <div class="toggle-panel toggle-right">
+                    <h1>Hallo, Teman!</h1>
+                    <p>Kamu belum memiliki akun? ajukan pembuatan akun disini</p>
+                    <button class="hidden" id="register">Request</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/login.js"></script>
+</body>
+
+</html>

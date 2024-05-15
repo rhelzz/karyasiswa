@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aplikasi Absensi</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.lineicons.com/4.0/lineicons.css" rel="stylesheet" />
+    <link rel="stylesheet" href="public/css/style.css">
+    <style>
+        body{
+            scroll-behavior: smooth;
+        }
+
+        .main {
+            width: 100%;
+        }
+
+        .section-title h2 {
+            font-weight: bold;
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+
+        .text-primary {
+            color: #0e2238 !important;
+        }
+
+        .bg-light {
+            background-color: #f8f9fa !important;
+        }
+
+        .rounded {
+            border-radius: 10px;
+        }
+
+        .shadow {
+            box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+        }
+
+        .bg-dark {
+            background-color: #0e2238 !important;
+        }
+
+        .bg-light {
+            background-color: rgb(245, 245, 245) !important;
+        }
+    </style>
+
+</head>
+<body>
+
+    <!-- Sidebar -->
+    <div class="wrapper">
+        <aside id="sidebar">
+            <div class="d-flex">
+                <button class="toggle-btn" type="button">
+                    <i class="lni lni-grid-alt"></i>
+                </button>
+                <div class="sidebar-logo">
+                    <a href="#">StudentForm</a>
+                </div>
+            </div>
+            <ul class="sidebar-nav">
+                <li class="sidebar-item">
+                    <a href="public/index.html" class="sidebar-link" target="_blank">
+                        <i class="lni lni-agenda"></i>
+                        <span>Public User</span>
+                    </a>
+                </li>
+                <li class="sidebar-item">
+                    <a href="admin/index.html" class="sidebar-link" target="_blank">
+                        <i class="lni lni-agenda"></i>
+                        <span>Admin</span>
+                    </a>
+                </li>
+            </ul>
+        </aside>
+    <!-- Sidebar End -->
+
+        <!-- Main Content -->
+        <div class="main">
+
+            <!-- About -->
+            <section class="about py-5" id="about">
+                <div class="container-lg pt-4">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8">
+                            <div class="section-title text-center">
+                                <h2 class="fw-bold mb-5 text-primary">About My Project</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="about-text">
+                                <h3 class="fw-bold fs-4 mb-3">StudentForm</h3>
+                                <p class="">&emsp;StudentForm adalah sebuah aplikasi modern yang dirancang untuk memudahkan pengelolaan absensi siswa di sekolah. Dengan antarmuka yang intuitif dan fitur-fitur canggih, aplikasi ini menawarkan solusi efisien dan akurat untuk mencatat kehadiran siswa.</p>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-12 d-flex align-items-center">
+                                    <a href="#" class="btn px-3 btn-outline-dark mr-5">More info</a>
+                                    <div class="social-links">
+                                        <a href="https://discordapp.com/users/856885005702791178" class="mr-2 text-decoration-none text-dark"><i class="fab fa-discord"></i></a>
+                                        <a href="https://www.instagram.com/rasyadhelza_/" class="mr-2 text-decoration-none text-dark"><i class="fab fa-instagram"></i></a>
+                                        <a href="https://wa.me/62895347282709" class="mr-2 text-decoration-none text-dark"><i class="fab fa-whatsapp"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mt-5 mt-md-0">
+                            <div class="about-text">
+                                <h3 class="fw-bold fs-4 mb-3">Language Used</h3>
+                            </div>
+                            <div class="skill-items mb-4">
+                                <h5 class="fs-5">HTML</h5>
+                                <div class="progress" style="height: 5px;">
+                                    <div class="progress-bar bg-dark progress-bar-animated" role="progressbar" style="width: 40%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                            </div>
+                            <div class="skill-items mb-4">
+                                <h5 class="fs-5">CSS/Bootstrap</h5>
+                                <div class="progress" style="height: 5px;">
+                                    <div class="progress-bar bg-dark progress-bar-animated" role="progressbar" style="width: 80%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                            </div>
+                            <div class="skill-items mb-4">
+                                <h5 class="fs-5">JavaScript</h5>
+                                <div class="progress" style="height: 5px;">
+                                    <div class="progress-bar bg-dark progress-bar-animated" role="progressbar" style="width: 30%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                            </div>
+                            <div class="skill-items mb-4">
+                                <h5 class="fs-5">PHP/MySql</h5>
+                                <div class="progress" style="height: 5px;">
+                                    <div class="progress-bar bg-dark progress-bar-animated" role="progressbar" style="width: 80%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- About End -->
+        
+            <div class="container-fluid py-5 bg-light">
+                <div class="row my-5 py-5">
+                    <div class="col-md-6">
+                        <h3 class="ml-4 text-primary fs-4">Selamat Datang di StudentForm</h3>
+                        <p class="lead ml-4" style="font-size: 16px;">&emsp;Aplikasi ini dibuat untuk memudahkan proses absensi siswa di sekolah. Dengan fitur-fitur yang canggih, aplikasi ini akan membantu Anda mengelola absensi siswa dengan lebih efisien dan akurat.</p>
+                    </div>
+                    <div class="col-md-6">
+                        <img src="assets/banner-1.jpg" class="img-fluid rounded" alt="Aplikasi Absen Siswa">
+                    </div>
+                </div>
+        
+                <div class="row my-5 py-5 bg-white rounded">
+                    <div class="col-md-12">
+                        <h2 class="text-primary ml-4 mb-4">Latar Belakang Pembuatan Aplikasi</h2>
+                        <p class="ml-4 mb-2">&emsp;Dalam era digital saat ini, pengelolaan data di sekolah menjadi sangat penting untuk menjaga efisiensi dan akurasi. Salah satu aspek yang sering menjadi tantangan adalah proses absensi siswa. Dengan jumlah siswa yang besar dan metode pencatatan manual yang rentan terhadap kesalahan, sekolah membutuhkan solusi yang lebih modern dan andal.</p>
+                        <p class="ml-4 mb-2">&emsp;Aplikasi Absen Siswa hadir sebagai solusi inovatif untuk mengatasi masalah tersebut. Dengan memanfaatkan teknologi terkini, aplikasi ini menawarkan cara yang lebih efisien dan akurat dalam mengelola absensi siswa. Aplikasi ini dapat membantu para guru dan staf sekolah menghemat waktu dan mengurangi kesalahan dalam pencatatan absensi.</p>
+                        <p class="ml-4 mb-2">&emsp;Selain itu, aplikasi ini juga menyediakan fitur-fitur tambahan yang memudahkan pemantauan dan pelaporan absensi siswa. Orang tua dapat mengakses informasi absensi anak mereka secara real-time, sementara pihak sekolah dapat dengan mudah menghasilkan laporan absensi yang akurat dan komprehensif.</p>
+                    </div>
+                </div>
+        
+                <div class="row my-5 py-5">
+                    <div class="col-md-12">
+                        <h3 class="text-primary text-center mb-5">Kelebihan Aplikasi StudentForm</h3>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card bg-light">
+                            <div class="card-body text-center">
+                                <i class="fas fa-clock fa-3x mb-3 text-primary mx-auto"></i>
+                                <h5 class="card-title text-primary">Efisiensi Waktu</h5>
+                                <p class="card-text">Aplikasi ini memungkinkan proses absensi dilakukan dengan cepat dan mudah, menghemat waktu yang biasanya dihabiskan untuk pencatatan manual.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card bg-light">
+                            <div class="card-body text-center">
+                                <i class="fas fa-check-circle fa-3x mb-3 text-primary"></i>
+                                <h5 class="card-title text-primary">Akurasi Tinggi</h5>
+                                <p class="card-text">Dengan menggunakan teknologi modern, aplikasi ini mengurangi risiko kesalahan dalam pencatatan absensi, sehingga memberikan data yang lebih akurat.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card bg-light">
+                            <div class="card-body text-center">
+                                <i class="fas fa-mobile-alt fa-3x mb-3 text-primary"></i>
+                                <h5 class="card-title text-primary">Aksesibilitas</h5>
+                                <p class="card-text">Aplikasi ini dapat diakses dari perangkat seluler, memungkinkan guru untuk memantau absensi siswa secara real-time.<br><br></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+            <footer class="bg-dark text-white py-3">
+                <div class="container text-center">
+                    <p>&copy; 2024 StudentForm. All rights reserved.</p>
+                </div>
+            </footer>
+
+            <div class="text-center">
+                <a href="#" id="scroll-to-top" class="btn btn-primary">
+                    <i class="lni lni-arrow-up"></i>
+                </a>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="public/js/script.js"></script>
+    <script src="public/js/scroll-top.js"></script>
+    <script src="public/js/smooth-scroll.js"></script>
+
+</body>
+</html>
